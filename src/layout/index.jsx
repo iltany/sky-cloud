@@ -1,15 +1,16 @@
 import React from "react";
-import Copyright from "../components/copyright";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import useStyles from "./styles";
 
 const Layout = ({ children }) => {
+  const classes = useStyles();
+
   return (
     <div>
       <Header />
-      <main>{children}</main>
+      <main className={classes.mainContainer}>{children}</main>
       <Footer />
-      <Copyright />
     </div>
   );
 };

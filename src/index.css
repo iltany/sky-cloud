@@ -2,7 +2,9 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", "Comfortaa", "Montserrat", "Poppins", sans-serif;
+  font-family: "Roboto", "Comfortaa", "Montserrat", "Poppins", sans-serif !important;
+  font-style: normal;
+  letter-spacing: 0em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
