@@ -1,59 +1,57 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { featuredLinks } from "../../constants";
+import FooterContent from "./FooterContent";
 import useStyles from "./styles";
+
+const phone = "+37 06 225 29 36";
+const mail = "mail@example.com";
 
 const Footer = () => {
   const classes = useStyles();
 
-  const featuredLinks = [
-    { link: "/pricing", titleLink: "Pricing" },
-    { link: "/contacts", titleLink: "Contact" },
-    { link: "/", titleLink: "DMCA" },
-    { link: "/", titleLink: "Refund Policy" },
-    { link: "/", titleLink: "Privacy Policy" },
-    { link: "/", titleLink: "Terms of Service" },
-  ];
   return (
     <footer className={classes.footerContainer}>
       <div className={classes.container}>
         <div className={classes.footerContent}>
           <div className={classes.aboutWrapper}>
-            <div className={classes.footerTitle}>About us</div>
-            <div className={classes.footerDescription}>
+            <FooterContent footerTitle="About us">
               When using the SKYBOX Services You may transmit, store and or
               share certain data, information, files, etc. (altogether “Service
               Data”). For the avoidance of doubt, You retain full ownership of
               Your Service Data. SKYBOX doea that You or any other uss while
               using the Service. SKYBOX agrees that these Terms do not grant
-            </div>
+            </FooterContent>
           </div>
           <div className={classes.featuredWrapper}>
-            <div className={classes.footerTitle}>Featured links</div>
-            <div className={classes.footerDescription}>
+            <FooterContent footerTitle="Featured links">
               {featuredLinks.map((item) => {
                 return (
-                  <Link to={item.link} className={classes.footerLink}>
+                  <Link
+                    key={item.titleLink}
+                    to={item.link}
+                    className={classes.footerLink}
+                  >
                     {item.titleLink}
                   </Link>
                 );
               })}
-            </div>
+            </FooterContent>
           </div>
           <div className={classes.contactWrapper}>
-            <div className={classes.footerTitle}>Contact us</div>
-            <div className={classes.footerDescription}>
+            <FooterContent footerTitle="Contact us">
               <span> Our office:</span>
               <span>Digitalgoals LTD</span>
               <span>Lapathou, 6, Strovolos 2027,</span>
               <span>Lefkosia, Cyprus</span>
               <span>
-                Phone: <a href="tel:+37 06 225 29 36}"> +37 06 225 29 36</a>
+                Phone: <a href={`tel: ${phone}`}> {phone}</a>
               </span>
               <span>
                 Email:
-                <a href="mailto:mail@example.com"> mail@example.com</a>
+                <a href={`mailto:${mail}`}>{mail}</a>
               </span>
-            </div>
+            </FooterContent>
           </div>
         </div>
         <div className={classes.copyright}>

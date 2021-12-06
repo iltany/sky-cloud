@@ -1,12 +1,15 @@
 import React from "react";
-import useStyles from "./styles";
+import FeaturesSection from "./FeaturesSection";
+import PersonalAndBusiness from "./PersonalAndBusiness";
+import StatsPanel from "./StatsPanel";
 
 const Home = () => {
-  const classes = useStyles();
   return (
-    <div className={classes.backgroundWrapper}>
-      <div className={classes.container}>Personal and Business</div>
-    </div>
+    <>
+      <PersonalAndBusiness />
+      <FeaturesSection />
+      <StatsPanel />
+    </>
   );
 };
 

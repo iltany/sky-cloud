@@ -24,11 +24,14 @@ const useStyles = createUseStyles({
     },
   },
   logo: {
-    textTransform: "uppercase",
-    fontFamily: "Comfortaa",
-    fontSize: 36,
-    fontWeight: 700,
-    lineHeight: "40px",
+    "& a": {
+      textTransform: "uppercase",
+      fontFamily: "Comfortaa",
+      fontSize: 36,
+      fontWeight: 700,
+      lineHeight: "40px",
+      color: "#ffffff",
+    },
   },
   alignCenter: {
     display: "flex",

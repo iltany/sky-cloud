@@ -4,6 +4,7 @@ import { Button } from "semantic-ui-react";
 import useStyles from "./styles";
 import BurgerMenu from "../../assets/icons/BurgerMenu";
 import SidebarMenu from "./Sidebar";
+import { navigationLinks } from "../../constants";
 
 const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -16,17 +17,21 @@ const Header = () => {
   return (
     <header className={classes.container}>
       <div className={classes.navigationMenu}>
-        <div className={classes.logo}>skybox</div>
+        <div className={classes.logo}>
+          <Link to="/">skybox</Link>
+        </div>
         <div className={classes.alignCenter}>
-          <Link to="/" className={classes.navigationLink}>
-            Home
-          </Link>
-          <Link to="/pricing" className={classes.navigationLink}>
-            Pricing
-          </Link>
-          <Link to="/contacts" className={classes.navigationLink}>
-            Contact
-          </Link>
+          {navigationLinks.map((item) => {
+            return (
+              <Link
+                key={item.titleLink}
+                to={item.link}
+                className={classes.navigationLink}
+              >
+                {item.titleLink}
+              </Link>
+            );
+          })}
           <div className={classes.btnWrapper}>
             <Button type="button" className={classes.btnTransparent}>
               login
