@@ -4,6 +4,16 @@ import StoreIcon from "../assets/icons/StoreIcon";
 import PointIcon from "../assets/icons/PointIcon";
 import DownloadIcon from "../assets/icons/DownloadIcon";
 import UserIcon from "../assets/icons/UserIcon";
+import MinDaysBg from "../assets/images/30days.png";
+import MediumDaysBg from "../assets/images/90days.png";
+import MaxDaysBg from "../assets/images/365days.png";
+
+export const BREAKPOINTS = {
+  smallMobile: 0,
+  mobile: 360,
+  tablet: 780,
+  desktop: 1440,
+};
 
 export const navigationLinks = [
   { link: "/", titleLink: "Home" },
@@ -57,5 +67,44 @@ export const stats = [
     Icon: UserIcon,
     count: "235 764 784",
     description: "Зарегистрировано пользователей",
+  },
+];
+
+export const price = [
+  {
+    background_content: MinDaysBg,
+    popular: "",
+    days: "30 days",
+    price: "$20.99",
+    proposal_list: [
+      "1 Tb Free space",
+      "4 Tb Monthly space",
+      "100 Mbit Speed",
+      "3000 sessions",
+    ],
+  },
+  {
+    background_content: MediumDaysBg,
+    popular: "Most popular",
+    days: "90 days",
+    price: "$46.99",
+    proposal_list: [
+      "1 Tb Free space",
+      "4 Tb Monthly space",
+      "100 Mbit Speed",
+      "3000 sessions",
+    ],
+  },
+  {
+    background_content: MaxDaysBg,
+    popular: "",
+    days: "365 days",
+    price: "$127.99",
+    proposal_list: [
+      "1 Tb Free space",
+      "4 Tb Monthly space",
+      "100 Mbit Speed",
+      "3000 sessions",
+    ],
   },
 ];
