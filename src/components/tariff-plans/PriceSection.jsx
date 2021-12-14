@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import useBreakpoint from "use-breakpoint";
 import Slider from "react-slick";
+import { useLocation } from "react-router-dom";
 import { BREAKPOINTS, price } from "../../constants";
 import useStyles from "./styles";
 import CheckIcon from "../../assets/icons/CheckIcon";
@@ -40,14 +41,18 @@ const PriceSection = () => {
     return isMobile ? Slider : React.Fragment;
   }, [isMobile]);
 
+  const location = useLocation();
+
   return (
     <>
-      <div className={`${classes.container} ${classes.priceMaxWidth}`}>
-        <div className={classes.priceTitle}>Become a PREMIUM MEMBER</div>
-        <div className={classes.priceDescription}>
-          Premium Business <br /> 1 TB free space and 4 TB monthly transfer
+      {location.pathname === "/" ? (
+        <div className={`${classes.container} ${classes.priceMaxWidth}`}>
+          <div className={classes.priceTitle}>Become a PREMIUM MEMBER</div>
+          <div className={classes.priceDescription}>
+            Premium Business <br /> 1 TB free space and 4 TB monthly transfer
+          </div>
         </div>
-      </div>
+      ) : null}
       <div className={classes.priceWrapper}>
         <div className={`${classes.container} ${classes.priceContainerWidth}`}>
           <div className={classes.cardContainer}>

@@ -2,11 +2,12 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Contact from "../../pages/contact/Contact";
 import Home from "../../pages/home/Home";
+import Pricing from "../../pages/pricing/Pricing";
 
 const routes = [
   { path: "/", element: <Home /> },
   { path: "contacts", element: <Contact /> },
-  { path: "pricing", element: <div>Pricing</div> },
+  { path: "pricing", element: <Pricing /> },
 ];
 
 export default function Router() {
