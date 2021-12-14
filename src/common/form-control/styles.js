@@ -4,6 +4,7 @@ const useStyles = createUseStyles({
   formControl: {
     display: "flex",
     alignItems: "center",
+    justifyContent: "space-between",
     marginBottom: 20,
   },
   label: {
@@ -16,6 +17,7 @@ const useStyles = createUseStyles({
       marginRight: 45,
       padding: 0,
       background: "unset",
+      whiteSpace: "nowrap",
     },
   },
   inputContainer: {
@@ -36,6 +38,7 @@ const useStyles = createUseStyles({
     },
     " &.ui.input>input::placeholder": {
       padding: 0,
+      borderRadius: 0,
     },
     "&.ui.error": {
       borderRadius: 61,
