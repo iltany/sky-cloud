@@ -18,7 +18,7 @@ const Contact = () => {
       <div className={classes.mapContainer}>
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: "AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg",
+            key: "AIzaSyCUxGJEegXtpsE4Zc1LFWG8VFQNAZkzhkI",
           }}
           defaultCenter={{
             lat: 59.95,
