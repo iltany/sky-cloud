@@ -1,8 +1,8 @@
 import React from "react";
 import FeaturesSection from "./FeaturesSection";
 import PersonalAndBusiness from "./PersonalAndBusiness";
-import PriceSection from "./PriceSection";
-import StatsPanel from "./StatsPanel";
+import PriceSection from "../../components/tariff-plans/PriceSection";
+import StatsPanel from "../../components/stats-panel/StatsPanel";
 
 const Home = () => {
   return (

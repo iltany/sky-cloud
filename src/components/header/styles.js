@@ -1,4 +1,6 @@
 import { createUseStyles } from "react-jss";
+import headerBg from "../../assets/images/header-background.png";
+import smallHeaderBg from "../../assets/images/small-header-background.png";
 
 const useStyles = createUseStyles({
   container: {
@@ -8,6 +10,16 @@ const useStyles = createUseStyles({
     margin: "0px auto",
     "@media (max-width: 1260px)": {
       padding: "0px 22px",
+    },
+  },
+  headerContainer: {
+    backgroundImage: `url(${headerBg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    height: 337,
+    "@media (max-width: 420px)": {
+      backgroundImage: `url(${smallHeaderBg})`,
+      height: 239,
     },
   },
   navigationMenu: {
