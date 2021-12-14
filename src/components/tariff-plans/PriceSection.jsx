@@ -54,9 +54,8 @@ const PriceSection = () => {
             <PriceContentWrapper {...(isMobile && settings)}>
               {price.map((item, index) => {
                 return (
-                  <div className={classes.h100}>
+                  <div key={item.days} className={classes.h100}>
                     <div
-                      key={item.days}
                       className={getPriceContentClasses(index)}
                       style={{
                         backgroundImage: `url(${item.background_content}) `,
