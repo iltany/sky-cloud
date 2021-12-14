@@ -88,6 +88,7 @@ const useStyles = createUseStyles({
     width: "100%",
   },
   textarea: {
+    resize: "none",
     "&, &::placeholder": {
       width: "100%",
       height: 273,

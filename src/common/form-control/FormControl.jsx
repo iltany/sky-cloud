@@ -6,7 +6,7 @@ const FormControl = ({
   formControlWrapper,
   label,
   placeholder,
-  inputType,
+  inputType = "text",
   inputIcon,
   iconPosition,
   name,
@@ -19,7 +19,7 @@ const FormControl = ({
   const classes = useStyles();
 
   return (
-    <div className={classes.formControl || formControlWrapper}>
+    <div className={formControlWrapper || classes.formControl}>
       <Label className={classes.label}>{label}</Label>
       <Input
         placeholder={placeholder}

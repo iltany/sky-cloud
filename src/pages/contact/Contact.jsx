@@ -56,7 +56,6 @@ const Contact = () => {
                   return (
                     <FormControl
                       label="Name"
-                      inputType="text"
                       placeholder="John Doe"
                       touched={meta.touched}
                       error={meta.error}

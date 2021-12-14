@@ -4,13 +4,21 @@ import Contact from "../../pages/contact/Contact";
 import Faq from "../../pages/faq/Faq";
 import Home from "../../pages/home/Home";
 
+const routes = [
+  { path: "/", element: <Home /> },
+  { path: "contacts", element: <Contact /> },
+  { path: "faq", element: <Faq /> },
+  { path: "pricing", element: <div>Pricing</div> },
+];
+
 export default function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="contacts" element={<Contact />} />
-      <Route path="faq" element={<Faq />} />
-      <Route path="pricing" element={<div>Pricing</div>} />
+      {routes.map((route) => {
+        return (
+          <Route key={route.path} path={route.path} element={route.element} />
+        );
+      })}
     </Routes>
   );
 }
