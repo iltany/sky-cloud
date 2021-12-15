@@ -7,6 +7,9 @@ import UserIcon from "../assets/icons/UserIcon";
 import MinDaysBg from "../assets/images/30days.png";
 import MediumDaysBg from "../assets/images/90days.png";
 import MaxDaysBg from "../assets/images/365days.png";
+import ProfileCrown from "../assets/icons/ProfileCrown";
+import ProfileCalendar from "../assets/icons/ProfileCalendar";
+import ProfileStorage from "../assets/icons/ProfileStorage";
 
 export const BREAKPOINTS = {
   smallMobile: 0,
@@ -107,5 +110,23 @@ export const price = [
       "100 Mbit Speed",
       "3000 sessions",
     ],
+  },
+];
+
+export const profileInfo = [
+  {
+    Icon: ProfileCrown,
+    title: "Account type:",
+    description: "VIP 90 days",
+  },
+  {
+    Icon: ProfileCalendar,
+    title: "",
+    description: "left 37 days",
+  },
+  {
+    Icon: ProfileStorage,
+    title: "File stored total:",
+    description: "1 239 345 gb",
   },
 ];

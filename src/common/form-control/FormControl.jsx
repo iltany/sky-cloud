@@ -4,6 +4,7 @@ import useStyles from "./styles";
 
 const FormControl = ({
   formControlWrapper,
+  labelClass,
   label,
   placeholder,
   inputType = "text",
@@ -20,7 +21,7 @@ const FormControl = ({
 
   return (
     <div className={formControlWrapper || classes.formControl}>
-      <Label className={classes.label}>{label}</Label>
+      <Label className={labelClass || classes.label}>{label}</Label>
       <Input
         placeholder={placeholder}
         className={classes.inputContainer}
