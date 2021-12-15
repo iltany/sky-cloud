@@ -60,6 +60,9 @@ const useStyles = createUseStyles({
     marginRight: 69,
     textTransform: "capitalize",
     color: "#ffffff",
+    "&:hover": {
+      color: "#ffffff",
+    },
     "@media (max-width: 1260px)": {
       marginRight: 50,
     },
@@ -81,7 +84,7 @@ const useStyles = createUseStyles({
       textTransform: "uppercase",
       color: "#ffffff",
       "&:hover": {
-        color: "#3B668D",
+        color: "#ffffff",
       },
     },
   },

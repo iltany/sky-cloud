@@ -37,9 +37,11 @@ const Header = () => {
               );
             })}
             <div className={classes.btnWrapper}>
-              <Button type="button" className={classes.btnTransparent}>
-                login
-              </Button>
+              <Link to="sign-in">
+                <Button type="button" className={classes.btnTransparent}>
+                  login
+                </Button>
+              </Link>
               <Link to="sign-up">
                 <Button type="button" className={classes.btnSignUp}>
                   sign up
