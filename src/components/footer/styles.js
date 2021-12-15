@@ -55,6 +55,9 @@ const useStyles = createUseStyles({
     color: "#ffffff",
     display: "flex",
     flexDirection: "column",
+    "& a:hover": {
+      color: "#ffffff",
+    },
   },
   aboutWrapper: {
     maxWidth: 423,

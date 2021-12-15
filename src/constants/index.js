@@ -28,6 +28,7 @@ export const featuredLinks = [
   { link: "/", titleLink: "Refund Policy" },
   { link: "/", titleLink: "Privacy Policy" },
   { link: "/", titleLink: "Terms of Service" },
+  { link: "/faq", titleLink: "FAQ" },
 ];
 
 export const features = [

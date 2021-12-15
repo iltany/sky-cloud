@@ -7,12 +7,15 @@ const useStyles = createUseStyles({
   registerContainer: {
     backgroundImage: `url(${MainBg})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
     width: "100%",
     minHeight: 980,
     height: "100%",
     marginTop: -75,
     paddingTop: 75,
+    "@media (min-width: 2570px)": {
+      backgroundSize: "cover",
+    },
     "@media (max-width: 992px)": {
       backgroundImage: "unset",
       minHeight: "unset",

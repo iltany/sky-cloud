@@ -4,7 +4,7 @@ const useStyles = createUseStyles({
   formControl: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
     marginBottom: 20,
   },
   label: {
