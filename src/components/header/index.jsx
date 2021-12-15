@@ -40,9 +40,11 @@ const Header = () => {
               <Button type="button" className={classes.btnTransparent}>
                 login
               </Button>
-              <Button type="button" className={classes.btnSignUp}>
-                sign up
-              </Button>
+              <Link to="sign-up">
+                <Button type="button" className={classes.btnSignUp}>
+                  sign up
+                </Button>
+              </Link>
             </div>
           </div>
           <Button
