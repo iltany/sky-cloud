@@ -6,6 +6,7 @@ import Home from "../../pages/home/Home";
 import Pricing from "../../pages/pricing/Pricing";
 import SignUp from "../../pages/sign-up/SignUp";
 import SignIn from "../../pages/sign-in/SignIn";
+import TextPage from "../../pages/text-page/TextPage";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -14,6 +15,7 @@ const routes = [
   { path: "pricing", element: <Pricing /> },
   { path: "sign-up", element: <SignUp /> },
   { path: "sign-in", element: <SignIn /> },
+  { path: "text-page", element: <TextPage /> },
 ];
 
 export default function Router() {
