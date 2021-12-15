@@ -2,14 +2,6 @@ import { createUseStyles } from "react-jss";
 import MainBg from "../../assets/images/main-background.png";
 
 const useStyles = createUseStyles({
-  mapContainer: {
-    width: "100%",
-    height: 838,
-    margin: "88px 0px 25px 0px",
-    "@media (max-width: 992px)": {
-      margin: "54px 0px 25px 0px",
-    },
-  },
   faqContainer: {
     backgroundImage: `url(${MainBg})`,
     backgroundRepeat: "no-repeat",
