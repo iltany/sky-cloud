@@ -6,6 +6,7 @@ const useStyles = createUseStyles({
     alignItems: "center",
     justifyContent: "flex-end",
     marginBottom: 20,
+    width: "100%",
   },
   label: {
     "&.ui.label": {
@@ -21,6 +22,8 @@ const useStyles = createUseStyles({
     },
   },
   inputContainer: {
+    minWidth: 630,
+    maxWidth: 739,
     width: "100%",
     "&.ui.input>input, &.ui.input>input::placeholder": {
       backgroundColor: "#F3F3F3",
