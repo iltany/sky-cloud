@@ -15,7 +15,7 @@ const useStyles = createUseStyles({
     height: "100%",
     marginTop: -75,
     paddingTop: 75,
-    "@media (min-width: 2570px)": {
+    "@media (min-width: 1900px)": {
       backgroundSize: "cover",
     },
     "@media (max-width: 992px)": {
@@ -28,11 +28,74 @@ const useStyles = createUseStyles({
     width: "100%",
     display: "block",
     margin: "0px auto",
+    overflowX: "auto",
+    boxShadow: " 0px 3px 9px -3px rgba(34, 60, 80, 0.2)",
+    marginBottom: 30,
+    "& .ui.table": {
+      border: "none",
+    },
+    "& .ui.table tr td": {
+      border: "none",
+      fontFamily: "Inter",
+      fontSize: 14,
+      fontWeight: 400,
+      lineHeight: "17px",
+      color: "#2E3B52",
+      padding: "18px 0px 18px 24px",
+      "&:nth-child(2)": {
+        width: 0,
+        paddingLeft: 0,
+        "& svg": {
+          display: "block",
+          margin: "0px auto",
+        },
+      },
+      "&:last-child": {
+        paddingRight: 24,
+      },
+    },
     "& .ui.table thead th": {
       backgroundColor: "#F4F7FC",
+      border: "none",
+      padding: "35px 0px 0px 24px",
+    },
+    "& .ui.table thead tr:nth-child(2) th": {
+      "&:nth-child(6), &:nth-child(7), &:nth-child(8)": {
+        width: 97,
+        paddingLeft: 15,
+      },
+      "&:nth-child(5)": {
+        width: 97,
+      },
+      "&:nth-child(8)": {
+        paddingRight: 24,
+      },
+    },
+    "& .ui.table thead tr:nth-child(3) th": {
+      "&:nth-child(8)": {
+        paddingLeft: 15,
+      },
+      "&:nth-child(9)": {
+        paddingRight: 24,
+        verticalAlign: "middle",
+        "&>div": {
+          fontSize: 30,
+          letterSpacing: 0,
+          height: 40,
+        },
+      },
+      "&": {
+        paddingBottom: 15,
+      },
     },
     "& .ui.striped.table tbody tr:nth-child(2n), & .ui.striped.table>tr:nth-child(2n)":
-      { backgroundColor: "#F4F7FC" },
+      {
+        backgroundColor: "#F4F7FC",
+      },
+    "& .ui.table tfoot tr td:last-child": {
+      padding: 0,
+      height: 44,
+    },
   },
   dFlex: {
     display: "flex",
@@ -66,6 +129,10 @@ const useStyles = createUseStyles({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    "& .ui.button": {
+      padding: 0,
+      backgroundColor: "transparent",
+    },
   },
   fileStored: {
     fontFamily: "Inter",
@@ -186,15 +253,17 @@ const useStyles = createUseStyles({
         content: `url(${CheckboxOn})`,
         width: 20,
         height: 20,
+        left: 1,
       },
   },
   selectNoWrapper: {
     "&.ui.selection.dropdown": {
-      width: 75,
+      width: 62,
       height: 40,
       backgroundColor: "transparent",
       border: "none",
       minWidth: "unset",
+      paddingLeft: 0,
     },
     "&.ui.dropdown>.text, &.ui.default.dropdown:not(.button)>.text, &.ui.dropdown:not(.button)>.default.text":
       {
@@ -221,6 +290,78 @@ const useStyles = createUseStyles({
     letterSpacing: "0.05em",
     textTransform: "uppercase",
     color: "#606F89",
+    textAlign: "center",
+  },
+  accessContainer: {
+    width: 49,
+    height: 20,
+    backgroundColor: "#0A65FF",
+    color: "#ffffff",
+    borderRadius: 11,
+    fontFamily: "Inter",
+    fontSize: 10,
+    fontWeight: 500,
+    lineHeight: "12px",
+    letterSpacing: "0.05em",
+    textTransform: "uppercase",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: 10,
+  },
+  widthUnset: {
+    "&.ui.selection.dropdown": {
+      width: "unset",
+      paddingLeft: 16,
+    },
+  },
+  alignCenter: {
+    ".ui.table tr td&": {
+      textAlign: "center",
+    },
+  },
+  activeRow: {
+    backgroundColor: "#EBF2FF",
+    ".ui.striped.table tbody tr:nth-child(2n)&, .ui.striped.table>tr:nth-child(2n)&":
+      {
+        backgroundColor: "#EBF2FF",
+      },
+    ".ui.striped.table tbody tr& td:first-child": {
+      borderLeft: "5px solid #0A65FF",
+      paddingLeft: 19,
+    },
+  },
+  paginationContainer: {
+    fontFamily: "Inter",
+    fontSize: 12,
+    fontWeight: 600,
+    lineHeight: "15px",
+    letterSpacing: "0.05em",
+    color: "#606F89",
+    display: "flex",
+    alignItems: "baseline",
+    justifyContent: "flex-end",
+    marginRight: 224,
+  },
+  paginationSelect: {
+    "&.ui.selection.dropdown": {
+      minWidth: "unset",
+      paddingLeft: 5,
+      paddingTop: 10,
+      marginRight: 50,
+      border: "none",
+      color: "#606F89",
+    },
+  },
+  btnWrapper: {
+    marginLeft: 50,
+    "& .ui.button": {
+      padding: 0,
+      backgroundColor: "transparent",
+      "&:first-child": {
+        marginRight: 50,
+      },
+    },
   },
 });
 

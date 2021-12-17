@@ -119,7 +119,7 @@ const TableHeader = () => {
           <Select
             placeholder="access"
             options={PAGE_SIZE}
-            className={classes.selectNoWrapper}
+            className={`${classes.selectNoWrapper} ${classes.widthUnset}`}
           />
         </Table.HeaderCell>
         <Table.HeaderCell>
