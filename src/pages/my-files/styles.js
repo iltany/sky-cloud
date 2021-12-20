@@ -120,7 +120,6 @@ const useStyles = createUseStyles({
       width: 148,
       height: 40,
       display: "flex",
-      justifyContent: "center",
       alignItems: "center",
       color: "#ffffff",
       borderRadius: 4,
@@ -129,6 +128,7 @@ const useStyles = createUseStyles({
       fontWeight: 600,
       lineHeight: "17px",
       backgroundColor: "#913E98",
+      padding: "0px 0px 0px 10px",
     },
     "& svg": {
       marginRight: 10,
@@ -138,6 +138,7 @@ const useStyles = createUseStyles({
     "&.ui.button": {
       backgroundColor: "#F04438",
       marginLeft: 20,
+      padding: "0px 0px 0px 16px",
     },
   },
   spaceBetween: {
@@ -397,6 +398,98 @@ const useStyles = createUseStyles({
         marginRight: 50,
       },
     },
+  },
+  uploadContainer: {
+    margin: "50px -18.5px 42px -40px",
+  },
+  uploadContent: {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "18px 89px",
+    backgroundColor: "#F2FFEE",
+    fontFamily: "Inter",
+    fontSize: 14,
+    fontWeight: 400,
+    lineHeight: "17px",
+    color: "#2E3B52",
+    "@media(max-width: 767px)": {
+      padding: "18px",
+    },
+    "&:nth-child(2n)": {
+      backgroundColor: "#FFF5F5",
+    },
+  },
+  marginName: {
+    marginLeft: 37,
+    "@media(max-width: 767px)": {
+      marginLeft: 10,
+    },
+  },
+  marginStatus: {
+    marginRight: 137,
+    "@media(max-width: 767px)": {
+      marginRight: 27,
+    },
+  },
+  positionCheckbox: {
+    marginBottom: 24,
+    "&.ui.checkbox .box:before, &.ui.checkbox label:before": {
+      top: -1,
+    },
+    "&.ui.checkbox label": {
+      fontFamily: "Inter",
+      fontSize: 14,
+      fontWeight: 400,
+      lineHeight: "17px",
+      letterSpacing: "0.07em",
+      color: "#2E3B52",
+      paddingLeft: 35,
+    },
+  },
+  modalUploadBtn: {
+    "&.ui.button": {
+      width: 247,
+      backgroundColor: "#F04438",
+      padding: "0px 0px 0px 16px",
+      justifyContent: "center",
+    },
+  },
+  smallModal: {
+    "&.ui.modal": {
+      maxWidth: 355,
+    },
+  },
+  modalTitle: {
+    "&.ui.header": {
+      fontSize: 24,
+      fontWeight: 500,
+    },
+  },
+  contentCreateFolder: {
+    "& .ui.input": {
+      width: "100%",
+      marginBottom: 25,
+    },
+    "& .ui.selection.dropdown": {
+      width: "100%",
+      marginBottom: 26,
+      "&:last-child": {
+        marginBottom: 39,
+      },
+    },
+    "& .ui.dropdown>.text": {
+      textTransform: "uppercase",
+    },
+  },
+  inputTitle: {
+    fontFamily: "Inter",
+    fontSize: 14,
+    fontWeight: 600,
+    lineHeight: "17px",
+    letterSpacing: "0.05em",
+    color: "#606F89",
+    marginBottom: 4,
+    textTransform: "uppercase",
   },
 });
 
