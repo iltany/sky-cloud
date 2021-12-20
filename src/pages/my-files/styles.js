@@ -42,12 +42,18 @@ const useStyles = createUseStyles({
       lineHeight: "17px",
       color: "#2E3B52",
       padding: "18px 0px 18px 24px",
+      "@media(max-width: 767px)": {
+        display: "flex !important",
+      },
       "&:nth-child(2)": {
         width: 0,
         paddingLeft: 0,
         "& svg": {
           display: "block",
           margin: "0px auto",
+          "@media(max-width: 767px)": {
+            margin: "10px 0px 0px 0px",
+          },
         },
       },
       "&:last-child": {
@@ -72,6 +78,12 @@ const useStyles = createUseStyles({
       },
     },
     "& .ui.table thead tr:nth-child(3) th": {
+      "@media(max-width: 767px)": {
+        "&>div": {
+          display: "flex",
+          justifyContent: "flex-start",
+        },
+      },
       "&:nth-child(8)": {
         paddingLeft: 15,
       },
@@ -95,6 +107,9 @@ const useStyles = createUseStyles({
     "& .ui.table tfoot tr td:last-child": {
       padding: 0,
       height: 44,
+      "@media(max-width: 767px)": {
+        height: "unset",
+      },
     },
   },
   dFlex: {
@@ -129,6 +144,9 @@ const useStyles = createUseStyles({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    "@media(max-width: 767px)": {
+      width: "100%",
+    },
     "& .ui.button": {
       padding: 0,
       backgroundColor: "transparent",
@@ -308,14 +326,25 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     alignItems: "center",
     marginLeft: 10,
+    "@media(max-width: 767px)": {
+      marginLeft: 0,
+    },
   },
   widthUnset: {
     "&.ui.selection.dropdown": {
       width: "unset",
       paddingLeft: 16,
+      "@media(max-width: 767px)": {
+        width: 80,
+        paddingLeft: 0,
+      },
     },
   },
   alignCenter: {
+    "@media(max-width: 400px)": {
+      display: "flex",
+      alignItems: "center",
+    },
     ".ui.table tr td&": {
       textAlign: "center",
     },
@@ -342,6 +371,12 @@ const useStyles = createUseStyles({
     alignItems: "baseline",
     justifyContent: "flex-end",
     marginRight: 224,
+    "@media(max-width: 767px)": {
+      marginRight: 0,
+    },
+    "@media(max-width: 400px)": {
+      flexDirection: "column",
+    },
   },
   paginationSelect: {
     "&.ui.selection.dropdown": {
