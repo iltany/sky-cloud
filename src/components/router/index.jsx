@@ -8,6 +8,7 @@ import SignUp from "../../pages/sign-up/SignUp";
 import SignIn from "../../pages/sign-in/SignIn";
 import TextPage from "../../pages/text-page/TextPage";
 import Profile from "../../pages/profile/Profile";
+import MyFiles from "../../pages/my-files/MyFiles";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -18,6 +19,7 @@ const routes = [
   { path: "sign-in", element: <SignIn /> },
   { path: "text-page", element: <TextPage /> },
   { path: "profile", element: <Profile /> },
+  { path: "my-files", element: <MyFiles /> },
 ];
 
 export default function Router() {
