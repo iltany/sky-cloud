@@ -9,6 +9,7 @@ import SignIn from "../../pages/sign-in/SignIn";
 import TextPage from "../../pages/text-page/TextPage";
 import Profile from "../../pages/profile/Profile";
 import MyFiles from "../../pages/my-files/MyFiles";
+import DownloadFile from "../../pages/download-file/DownloadFile";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -20,6 +21,7 @@ const routes = [
   { path: "text-page", element: <TextPage /> },
   { path: "profile", element: <Profile /> },
   { path: "my-files", element: <MyFiles /> },
+  { path: "download-file", element: <DownloadFile /> },
 ];
 
 export default function Router() {

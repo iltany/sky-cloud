@@ -10,6 +10,11 @@ import MaxDaysBg from "../assets/images/365days.png";
 import ProfileCrown from "../assets/icons/ProfileCrown";
 import ProfileCalendar from "../assets/icons/ProfileCalendar";
 import ProfileStorage from "../assets/icons/ProfileStorage";
+import FileType from "../assets/icons/FileType";
+import Tick from "../assets/icons/Tick";
+import DoubleTick from "../assets/icons/DoubleTick";
+import SadSmiley from "../assets/icons/SadSmiley";
+import FunnySmiley from "../assets/icons/FunnySmiley";
 
 export const BREAKPOINTS = {
   smallMobile: 0,
@@ -128,5 +133,53 @@ export const profileInfo = [
     Icon: ProfileStorage,
     title: "File stored total:",
     description: "1 239 345 gb",
+  },
+];
+
+export const fileFeatures = [
+  {
+    Icon: FileType,
+    description: "File type: picture - png",
+  },
+  {
+    Icon: FileType,
+    description: "File status: ONLINE",
+  },
+  {
+    Icon: Tick,
+    description: "Free: 69 minutes",
+  },
+  {
+    Icon: DoubleTick,
+    description: "Premium: 269 minutes",
+  },
+];
+
+export const downloadType = [
+  {
+    id: 1,
+    title: "FREE Download",
+    subtitle: "Estimated time:",
+    time: "00:00:00",
+    Smiley: SadSmiley,
+    description: [
+      "Maximum speed is 50.0 KB/s",
+      "No parallel downloads",
+      "Resume downloads not supported",
+      "Waiting time before download 120min",
+    ],
+  },
+  {
+    id: 2,
+    title: "Premium Download",
+    subtitle: "Estimated time:",
+    time: "00:00:00",
+    Smiley: FunnySmiley,
+    description: [
+      "Maximum speed is 50.0 KB/s",
+      "No parallel downloads",
+      "Resume downloads not supported",
+      "Waiting time before download 120min",
+    ],
   },
 ];
