@@ -87,20 +87,24 @@ const MyFiles = () => {
               <Table.Row>
                 <Table.Cell colSpan="9">
                   <div className={classes.paginationContainer}>
-                    <span>Rows per page:</span>
-                    <Select
-                      defaultValue="10"
-                      options={PAGE_SIZE}
-                      className={classes.paginationSelect}
-                    />
-                    <span>1-10 of 706</span>
-                    <div className={classes.btnWrapper}>
-                      <Button type="button">
-                        <ArrowLeft />
-                      </Button>
-                      <Button type="button">
-                        <ArrowRight />
-                      </Button>
+                    <div className={classes.alignCenter}>
+                      <span>Rows per page:</span>
+                      <Select
+                        defaultValue="10"
+                        options={PAGE_SIZE}
+                        className={classes.paginationSelect}
+                      />
+                    </div>
+                    <div className={classes.dFlex}>
+                      <span>1-10 of 706</span>
+                      <div className={classes.btnWrapper}>
+                        <Button type="button">
+                          <ArrowLeft />
+                        </Button>
+                        <Button type="button">
+                          <ArrowRight />
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </Table.Cell>
