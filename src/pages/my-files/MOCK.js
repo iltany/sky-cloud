@@ -4,6 +4,16 @@ export const PAGE_SIZE = [
   { key: "10", value: "10", text: "10" },
 ];
 
+export const ACCESS = [
+  { key: "public", value: "public", text: "public" },
+  { key: "private", value: "private", text: "private" },
+];
+
+export const CONTAINER = [
+  { key: "/", value: "/", text: "/" },
+  { key: "//", value: "//", text: "//" },
+];
+
 export const TABLE_INFO = [
   {
     id: 1,
@@ -104,5 +114,26 @@ export const TABLE_INFO = [
     dl: "0",
     size: "12.44 Mb",
     access: "public",
+  },
+];
+
+export const UPLOAD_INFO = [
+  {
+    id: 1,
+    name: "Lorem-ipsum_sitamet.jpg",
+    status: "Complete",
+    size: "12.44 Mb",
+  },
+  {
+    id: 2,
+    name: "Lorem-ipsum_sitamet.jpg",
+    status: "Uplad Failed",
+    size: "12.44 Mb",
+  },
+  {
+    id: 3,
+    name: "Lorem-ipsum_sitamet.jpg",
+    status: "Complete",
+    size: "12.44 Mb",
   },
 ];

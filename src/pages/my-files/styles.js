@@ -42,12 +42,18 @@ const useStyles = createUseStyles({
       lineHeight: "17px",
       color: "#2E3B52",
       padding: "18px 0px 18px 24px",
+      "@media(max-width: 767px)": {
+        display: "flex !important",
+      },
       "&:nth-child(2)": {
         width: 0,
         paddingLeft: 0,
         "& svg": {
           display: "block",
           margin: "0px auto",
+          "@media(max-width: 767px)": {
+            margin: "10px 0px 0px 0px",
+          },
         },
       },
       "&:last-child": {
@@ -72,6 +78,12 @@ const useStyles = createUseStyles({
       },
     },
     "& .ui.table thead tr:nth-child(3) th": {
+      "@media(max-width: 767px)": {
+        "&>div": {
+          display: "flex",
+          justifyContent: "flex-start",
+        },
+      },
       "&:nth-child(8)": {
         paddingLeft: 15,
       },
@@ -95,6 +107,9 @@ const useStyles = createUseStyles({
     "& .ui.table tfoot tr td:last-child": {
       padding: 0,
       height: 44,
+      "@media(max-width: 767px)": {
+        height: "unset",
+      },
     },
   },
   dFlex: {
@@ -105,7 +120,6 @@ const useStyles = createUseStyles({
       width: 148,
       height: 40,
       display: "flex",
-      justifyContent: "center",
       alignItems: "center",
       color: "#ffffff",
       borderRadius: 4,
@@ -114,6 +128,7 @@ const useStyles = createUseStyles({
       fontWeight: 600,
       lineHeight: "17px",
       backgroundColor: "#913E98",
+      padding: "0px 0px 0px 10px",
     },
     "& svg": {
       marginRight: 10,
@@ -123,12 +138,16 @@ const useStyles = createUseStyles({
     "&.ui.button": {
       backgroundColor: "#F04438",
       marginLeft: 20,
+      padding: "0px 0px 0px 16px",
     },
   },
   spaceBetween: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    "@media(max-width: 767px)": {
+      width: "100%",
+    },
     "& .ui.button": {
       padding: 0,
       backgroundColor: "transparent",
@@ -308,14 +327,25 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     alignItems: "center",
     marginLeft: 10,
+    "@media(max-width: 767px)": {
+      marginLeft: 0,
+    },
   },
   widthUnset: {
     "&.ui.selection.dropdown": {
       width: "unset",
       paddingLeft: 16,
+      "@media(max-width: 767px)": {
+        width: 80,
+        paddingLeft: 0,
+      },
     },
   },
   alignCenter: {
+    "@media(max-width: 400px)": {
+      display: "flex",
+      alignItems: "center",
+    },
     ".ui.table tr td&": {
       textAlign: "center",
     },
@@ -342,6 +372,12 @@ const useStyles = createUseStyles({
     alignItems: "baseline",
     justifyContent: "flex-end",
     marginRight: 224,
+    "@media(max-width: 767px)": {
+      marginRight: 0,
+    },
+    "@media(max-width: 400px)": {
+      flexDirection: "column",
+    },
   },
   paginationSelect: {
     "&.ui.selection.dropdown": {
@@ -362,6 +398,98 @@ const useStyles = createUseStyles({
         marginRight: 50,
       },
     },
+  },
+  uploadContainer: {
+    margin: "50px -18.5px 42px -40px",
+  },
+  uploadContent: {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "18px 89px",
+    backgroundColor: "#F2FFEE",
+    fontFamily: "Inter",
+    fontSize: 14,
+    fontWeight: 400,
+    lineHeight: "17px",
+    color: "#2E3B52",
+    "@media(max-width: 767px)": {
+      padding: "18px",
+    },
+    "&:nth-child(2n)": {
+      backgroundColor: "#FFF5F5",
+    },
+  },
+  marginName: {
+    marginLeft: 37,
+    "@media(max-width: 767px)": {
+      marginLeft: 10,
+    },
+  },
+  marginStatus: {
+    marginRight: 137,
+    "@media(max-width: 767px)": {
+      marginRight: 27,
+    },
+  },
+  positionCheckbox: {
+    marginBottom: 24,
+    "&.ui.checkbox .box:before, &.ui.checkbox label:before": {
+      top: -1,
+    },
+    "&.ui.checkbox label": {
+      fontFamily: "Inter",
+      fontSize: 14,
+      fontWeight: 400,
+      lineHeight: "17px",
+      letterSpacing: "0.07em",
+      color: "#2E3B52",
+      paddingLeft: 35,
+    },
+  },
+  modalUploadBtn: {
+    "&.ui.button": {
+      width: 247,
+      backgroundColor: "#F04438",
+      padding: "0px 0px 0px 16px",
+      justifyContent: "center",
+    },
+  },
+  smallModal: {
+    "&.ui.modal": {
+      maxWidth: 355,
+    },
+  },
+  modalTitle: {
+    "&.ui.header": {
+      fontSize: 24,
+      fontWeight: 500,
+    },
+  },
+  contentCreateFolder: {
+    "& .ui.input": {
+      width: "100%",
+      marginBottom: 25,
+    },
+    "& .ui.selection.dropdown": {
+      width: "100%",
+      marginBottom: 26,
+      "&:last-child": {
+        marginBottom: 39,
+      },
+    },
+    "& .ui.dropdown>.text": {
+      textTransform: "uppercase",
+    },
+  },
+  inputTitle: {
+    fontFamily: "Inter",
+    fontSize: 14,
+    fontWeight: 600,
+    lineHeight: "17px",
+    letterSpacing: "0.05em",
+    color: "#606F89",
+    marginBottom: 4,
+    textTransform: "uppercase",
   },
 });
 
