@@ -74,6 +74,7 @@ const useStyles = createUseStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
     height: "100%",
+    backgroundColor: "#ffffff",
     "@media (max-width: 540px)": {
       padding: "120px 40px 65px 40px",
       maxWidth: 375,
